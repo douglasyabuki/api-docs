@@ -32,6 +32,38 @@ export const createUserRoute: FastifyPluginAsync = async (app) => {
               },
             },
           },
+
+          400: {
+            description: "Validation failed",
+            type: "object",
+            properties: {
+              errors: {
+                type: "array",
+                items: {
+                  type: "object",
+                  required: ["name", "error"],
+                  properties: {
+                    name: {
+                      type: "string",
+                    },
+                    error: {
+                      type: "string",
+                    },
+                  },
+                },
+              },
+            },
+          },
+
+          409: {
+            description: "User e-mail already exists",
+            type: "object",
+            properties: {
+              message: {
+                type: "string",
+              },
+            },
+          },
         },
       },
     },
