@@ -6,3 +6,6 @@
 - Install [fastify](https://www.npmjs.com/package/fastify), [@fastify/cors](https://www.npmjs.com/package/@fastify/cors), [@fastify/swagger](https://www.npmjs.com/package/@fastify/swagger)
 - Install [typescript](https://www.npmjs.com/package/typescript), [@types/node](https://www.npmjs.com/package/@types/node)
 - Install [@scalar/fastify-api-reference](https://www.npmjs.com/package/@scalar/fastify-api-reference) and add its config on server.ts
+- Install [zod](https://www.npmjs.com/package/zod) and [fastify-type-provider-zod](https://www.npmjs.com/package/fastify-type-provider-zod)
+
+<!-- validator is meant for inputs and serializers for outputs -->
