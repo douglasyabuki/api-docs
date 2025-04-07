@@ -20,6 +20,13 @@ export const getUsersRoute: FastifyPluginAsync = async (app) => {
           200: {
             description: "A list of users",
             type: "object",
+            examples: [
+                {
+                    id: "123e4567-e89b-12d3-a456-426614174000",
+                    name: "John Doe",
+                    email: "john.doe@example.com"
+                }
+            ],
             properties: {
               data: {
                 type: "array",
